@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+<!--    <persistence-unit name="default">-->
+
+<!--    </persistence-unit>-->
+
+    <persistence-unit name="default" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source> <!-- Change this to your actual JNDI datasource -->
+        <class>org.instructormicro.instructormicro.entities.Instructor</class> <!-- Add all your entity classes here -->
+        <class>org.instructormicro.instructormicro.entities.Course</class>
+        <class>org.instructormicro.instructormicro.entities.Review</class>
+        <class>org.instructormicro.instructormicro.entities.Admin</class>
+        <class>org.instructormicro.instructormicro.entities.Users</class>
+        <!-- Add more classes if you have additional entities -->
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <!-- Change the above property to 'none' if you want to manage the schema manually -->
+            <!-- Other properties for configuring your persistence unit -->
+        </properties>
+    </persistence-unit>
+</persistence>
