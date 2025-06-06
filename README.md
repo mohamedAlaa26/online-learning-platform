@@ -57,7 +57,7 @@ CREATE TABLE Enrollment (
 
 ```
 ## 🔗 RESTful Endpoints
-#### 📚 Student Endpoints
+### 📚 Student Endpoints
 POST /api/students/register - Register a new student
 
 POST /api/students/login - Student login
@@ -70,12 +70,12 @@ POST /api/students/{id}/courses/{courseId}/enroll - Enroll in course
 
 DELETE /api/students/{id}/courses/{courseId}/cancel-enrollment - Cancel enrollment
 
-#### 👨‍🏫 Instructor Endpoints
+### 👨‍🏫 Instructor Endpoints
 POST /api/instructors/register - Register instructor
 
 POST /api/instructors/login - Login instructor
 
-#### 🎓 Admin Endpoints
+### 🎓 Admin Endpoints
 POST /api/admins/login - Admin login
 
 GET /api/admins/users - View users
@@ -84,7 +84,7 @@ GET /api/admins/viewAll/courses - View courses
 
 PUT /api/admins/publishCheck/courses/{courseId}/status - Change course status
 
-##### 📖 Courses
+#### 📖 Courses
 GET /api/courses - Get all courses
 
 GET /api/courses/{courseId} - Get course info
