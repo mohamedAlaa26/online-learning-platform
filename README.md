@@ -54,3 +54,39 @@ CREATE TABLE Enrollment (
     INDEX fk_student_idx (student_id),
     INDEX fk_course_idx (course_id)
 );
+
+```
+## 🔗 RESTful Endpoints
+#### 📚 Student Endpoints
+POST /api/students/register - Register a new student
+
+POST /api/students/login - Student login
+
+GET /api/students/{id} - Get student info
+
+GET /api/students/{id}/courses - Enrolled courses
+
+POST /api/students/{id}/courses/{courseId}/enroll - Enroll in course
+
+DELETE /api/students/{id}/courses/{courseId}/cancel-enrollment - Cancel enrollment
+
+#### 👨‍🏫 Instructor Endpoints
+POST /api/instructors/register - Register instructor
+
+POST /api/instructors/login - Login instructor
+
+#### 🎓 Admin Endpoints
+POST /api/admins/login - Admin login
+
+GET /api/admins/users - View users
+
+GET /api/admins/viewAll/courses - View courses
+
+PUT /api/admins/publishCheck/courses/{courseId}/status - Change course status
+
+##### 📖 Courses
+GET /api/courses - Get all courses
+
+GET /api/courses/{courseId} - Get course info
+
+GET /api/courses/search - Search courses
