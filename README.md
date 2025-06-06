@@ -84,7 +84,7 @@ GET /api/admins/viewAll/courses - View courses
 
 PUT /api/admins/publishCheck/courses/{courseId}/status - Change course status
 
-#### 📖 Courses
+### 📖 Courses
 GET /api/courses - Get all courses
 
 GET /api/courses/{courseId} - Get course info
