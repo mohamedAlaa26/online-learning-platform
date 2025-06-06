@@ -90,3 +90,16 @@ GET /api/courses - Get all courses
 GET /api/courses/{courseId} - Get course info
 
 GET /api/courses/search - Search courses
+
+### ⚙️ Features to Highlight
+✅ Clean architecture using modular microservices
+
+✅ RESTful API-first design
+
+✅ WildFly + Spring Boot integration
+
+✅ In-memory (H2) and relational (MySQL) DB support
+
+✅ Cloud deployable (Azure, AWS EC2)
+
+✅ Scalable and extendable for ML-based services (e.g., course recommendation, dropout prediction)
